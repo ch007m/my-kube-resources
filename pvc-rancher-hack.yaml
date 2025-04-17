@@ -4,7 +4,7 @@ kind: "PersistentVolumeClaim"
 metadata:
   annotations:
     # This is a hack for rancher & local storage on kind !
-    volume.kubernetes.io/selected-node: dummy-control-plane
+    volume.kubernetes.io/selected-node: pipeline-control-plane
   # "quarkus-tekton-cli-project-pvc" => project-dir
   name: "project-dir"
 spec:
@@ -21,7 +21,7 @@ kind: "PersistentVolumeClaim"
 metadata:
   annotations:
     # This is a hack for rancher & local storage on kind !
-    volume.kubernetes.io/selected-node: dummy-control-plane
+    volume.kubernetes.io/selected-node: pipeline-control-plane
   # quarkus-tekton-cli-m2-repo-pvc => maven-repo-dir
   name: "maven-repo-dir"
 spec:
